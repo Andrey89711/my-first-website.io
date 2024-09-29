@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyWebsite</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+
+    <body>
+      
+      <div class="sidebar">
+        <a href="index.html">Основа</a>
+        <a href="seting_1.html">Настройка</a>
+        <a class="active" href="side_2.html">Отзывы</a>
+      </div>
+
+    <div class="grid-container">
+      <header>
+        <div class="grid-x grid-padding-x">
+          <div class="large-12 cell">
+            <h1>Контейнеры для разработки Web-приложений</h1>
+          </div>
+        </div>
+      </header>
+  
+      <div class="top-bar">
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="index.html">Основа</a></li>
+              <li><a href="seting_1.html">Настройка</a></li>
+              <li class="menu-text">Отзывы</li>
+            </ul>
+          </div>
+        </div>
+        
+      <section class="section"></section>
+      <div class="grid-container">
+        <form>
+          <label>Введите имя
+            <input type="text" placeholder="name" aria-describedby="exampleHelpText">
+          </label>
+          <p class="help-text" id="exampleHelpText">Только честно)</p>
+          <label>
+            Поделитесь, что было интерсно узнать из статьи?
+            <input type="text" placeholder="text" aria-describedby="exampleHelpText">
+          </label>
+          <label>
+            Есть ли у вас пожелания?
+            <textarea placeholder="text"></textarea>
+          </label>
+          <div class="grid-x grid-margin-x">
+            <fieldset class="cell large-6">
+              <legend>Насколько была полезна статья</legend>
+              <input type="radio" name="pokemon" value="Red" id="formRed" required><label for="formRed">Полезно</label>
+              <input type="radio" name="pokemon" value="Blue" id="formBlue"><label for="formBlue">Нормально</label>
+              <input type="radio" name="pokemon" value="Yellow" id="formYellow"><label for="formYellow">Бесполезно</label>
+            </fieldset>
+          </div>
+          <div class="input-group">
+            <div class="input-group-button">
+              <input type="submit" class="button" value="Submit">
+            </div>
+          </div>
+        </form>
+      </div>
+      <section class="section_big"></section>
+
+      <div class="footer">&copy;<span id="year"> </span><span> All rights reserved.</span></div>
+
+    </body>
