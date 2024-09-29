@@ -12,31 +12,12 @@
 
   </head>
 <body>
-  <input type="checkbox" id="check">
-  <label for="check">
-    <i class="fas fa-bars" id="btn"></i>
-    <i class="fas fa-times" id="cancel"></i>
-  </label>
   <div class="sidebar">
-    <header>Menu</header>
-    <a href="#" class="active">
-      <i class="fas fa-qrcode"></i>
-      <span>Введение</span>
-    </a>
-    <a href="#">
-      <i class="fas fa-link"></i>
-      <span>Преимущества</span>
-    </a>
-    <a href="#">
-      <i class="fas fa-stream"></i>
-      <span>Понимание</span>
-    </a>
-    <a href="#">
-       <i class="fas fa-calendar"></i>
-      <span>Таблица</span>
-    </a>
+    <a class="active" href="index.html">Основа</a>
+    <a href="seting_1.html">Настройка</a>
+    <a href="side_2.html">Отзывы</a>
   </div>
-
+  
   <div class="grid-container">
     <header>
       <div class="grid-x grid-padding-x">
@@ -61,9 +42,15 @@
         <h2>Контейнеры Docker</h2>
 
           <p>Контейнер Docker - это запущенный экземпляр образа Docker. При запуске контейнер оборачивает приложение и его зависимости в изолированную и согласованную среду, обеспечивая его ожидаемое поведение в различных системах. Контейнеры можно создавать, запускать, останавливать и удалять по мере необходимости, что повышает переносимость приложений и упрощает тестирование и развертывание новых версий программного обеспечения.</p>
-          <img src="img/1.avif">
+          <div class="center">
+            <img src="img/1.avif">
+          </div>
           <p>Таким образом, Docker упрощает контейнеризацию приложений, предоставляя разработчикам надежный и эффективный способ упаковки, распространения и запуска программного обеспечения в последовательном и переносимом виде. Имея представление об основных концепциях Docker, таких как контейнеризация, образы, Dockerфайлы и контейнеры, мы рассмотрим использование Docker для веб-разработки в следующих разделах.</p>
-        
+
+          <section class="section_min"></section>
+          <div class="center">
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/n52F-5xnaZ8?si=A_5Rura4WB8BXptx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
             <section class="section"></section>
             <div class="center">
                 <ul class="pagination" role="navigation" aria-label="Pagination">
@@ -81,5 +68,8 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+
+    <div class="footer">&copy;<span id="year"> </span><span> Your Company Name. All rights reserved.</span></div>
+
   </body>
 </html>
