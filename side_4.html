@@ -1,0 +1,120 @@
+
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+
+  </head>
+<body>
+    
+    <div class="sidebar">
+      <a class="active" href="index.html">Основа</a>
+      <a href="seting_1.html">Настройка</a>
+      <a href="side_2.html">Отзывы</a>
+    </div>
+
+    <div class="grid-container">
+      <header>
+        <div class="grid-x grid-padding-x">
+          <div class="large-12 cell">
+            <h1>Контейнеры для разработки Web-приложений</h1>
+          </div>
+        </div>
+      </header>
+
+    <div class="top-bar">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Основа</li>
+            <li><a href="seting_1.html">Настройка</a></li>
+            <li><a href="side_2.html">Отзывы</a></li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="grid-container">
+      <section class="section"></section>
+            <h2>Концепции Docker</h2>
+            <section class="section_low"></section>
+            <h3>Виртуальные машины</h3>
+            <p>
+                Предшественниками контейнеров Docker были виртуальные машины. Виртуальная машина, как и контейнер, изолирует от внешней среды приложение и его зависимости. 
+                Однако контейнеры Docker обладают преимуществами перед виртуальными машинами. Так, они потребляют меньше ресурсов,
+                их очень легко переносить, они быстрее запускаются и приходят в работоспособное состояние. В этом материале можно найти подробное сравнение контейнеров и виртуальных машин.
+            </p>
+
+            <section class="section_min"></section>
+            <h3>Образ контейнера Docker</h3>
+            <p>
+                Выше мы уже говорили об «образах». Что это такое? Хороший вопрос. То, что в терминологии Docker называется «образом», или, по-английски,
+                «image», это совсем не то же самое, что, например, фотография (это — одно из значений слова «image»).
+            </p>
+            <p>
+                Образы контейнеров Docker можно сравнить с чертежами, с формочками для печенья, или с пресс-формами для изготовления пластиковых изделий. 
+                Образы — это неизменные шаблоны, которые используются для создания одинаковых контейнеров.
+            </p>
+            <p>
+                В образе контейнера Docker содержится образ базовой операционной системы, код приложения, библиотеки, от которого оно зависит. 
+                Всё это скомпоновано в виде единой сущности, на основе которой можно создать контейнер.
+            </p>
+
+            <section class="section_min"></section>
+            <h3>Файл Dockerfile</h3>
+            <p>
+                Файл Dockerfile содержит набор инструкций, следуя которым Docker будет собирать образ контейнера. Этот файл содержит описание базового образа,
+                который будет представлять собой исходный слой образа. Среди популярных официальных базовых образов можно отметить python, ubuntu, alpine.
+            </p>
+            <p>
+                В образ контейнера, поверх базового образа, можно добавлять дополнительные слои. Делается это в соответствии с инструкциями из <code>Dockerfile</code>. Например, 
+                если <code>Dockerfile</code> описывает образ, который планируется использовать для решения задач машинного обучения, то в нём могут быть инструкции для включения
+                в промежуточный слой такого образа библиотек NumPy, Pandas и Scikit-learn.
+            </p>
+            <p>
+                И, наконец, в образе может содержаться, поверх всех остальных, ещё один тонкий слой, данные, хранящиеся в котором, поддаются изменению.
+                 Это — небольшой по объёму слой, содержащий программу, которую планируется запускать в контейнере.
+            </p>
+
+            <section class="section_min"></section>
+            <h3>Контейнер Docker</h3>
+            <p>
+                Для того чтобы запустить контейнер, нам нужен, во-первых, образ контейнера, во-вторых — среда, в которой установлен Docker, 
+                способная понять команду вида <code>docker run image_name</code>. Эта команда создаёт контейнер из образа и запускает его.
+            </p>
+
+
+            <section class="section_min"></section>
+            <h3>Репозиторий контейнеров</h3>
+            <p>
+                Если вы хотите дать возможность другим людям создавать контейнеры на основе вашего образа, вы можете отправить этот образ в облачное хранилище.
+                Самым крупным подобным хранилищем является репозиторий Docker Hub. Он используется при работе с Docker по умолчанию.
+            </p>
+            </div>
+
+            <section class="section"></section>
+            <div class="center">
+                <ul class="pagination" role="navigation" aria-label="Pagination">
+                    <li><a href="side_3.html" aria-label="Next page">Previous <span class="show-for-sr">page</span></a></li>
+                    <li><a href="index.html" aria-label="Page 2">1</a></li>
+                    <li><a href="side_3.html" aria-label="Page 2">2</a></li>
+                    <li class="current"><span class="show-for-sr">You're on page</span>3</li>
+                    <li><a href="side_1.html" aria-label="Page 2">4</a></li>
+                    <li><a href="side_1.html" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+                </ul>
+            </div>
+            <section class="section"></section>
+        </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+    <div class="footer">&copy;<span id="year"> </span><span> Your Company Name. All rights reserved.</span></div>
+
+  </body>
+</html>
